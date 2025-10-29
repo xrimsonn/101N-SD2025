@@ -1,0 +1,52 @@
+{
+    "name": "Jose Rosales",
+    "short_name": "SPURS",
+    "scope": "./",
+    "start_url": "./index.html?utm_source=web_app_manifest",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "PWA de test",
+    "orientation": "portrait",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#000000",
+    "lang": "en-us",
+    "icons": [
+        {
+            "src": "./img/tottenham-hotspur-fc-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./img/tottenham-hotspur-fc-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/tottenham-hotspur-fc-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/tottenham-hotspur-fc-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/tottenham-hotspur-fc-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/tottenham-hotspur-fc-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/tottenham-hotspur-fc-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        }
+    ]
+}

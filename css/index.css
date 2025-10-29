@@ -1,0 +1,85 @@
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .skill-chip {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 1rem;
+            margin: 0.2rem;
+            font-size: 0.9rem;
+        }
+
+        .project-card {
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .timeline {
+            border-left: 3px solid var(--secondary);
+            padding-left: 2rem;
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0.5rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: var(--secondary);
+        }
+
+        .contact-form {
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .cta-button {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .language-badge {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 1rem;
+        }
+
+        @media (min-width: 992px) {
+            .sticky-sidebar {
+                position: sticky;
+                top: 2rem;
+            }
+        }
