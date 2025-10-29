@@ -1,44 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1976d2">
-    <meta name="MobileOptimized" content="width">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="PWA SD2025">
-    <meta name="apple-touch-icon" href="img/tottenham-hotspur-fc-128x128.png" sizes="128x128">
-    <meta name="apple-touch-startup-image" href="img/tottenham-hotspur-fc-128x128.png">
-    <meta name="apple-mobile-web-app-title" content="PWA SD2025">
-    <link rel="manifest" href="manifest.json">
-    <title>NEW PROJECT</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" sizes="512x512" href="img/tottenham-hotspur-fc-512x512.png">
-    <script src="main.js"></script>
+    <title>CV - José Antonio Rosales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>WELCOME TO NEW PROJECT</h1>
-    </header>
-    <main>
-        <section>
-            <h2>IMAGE GALLERY</h2>
-            <div class="gallery">
-                <img src="img/tottenham-hotspur-fc-1024x1024.png" alt="Imagen 1024x1024" width="256">
-                <img src="img/tottenham-hotspur-fc-512x512.png" alt="Imagen 512x512" width="128">
-                <img src="img/tottenham-hotspur-fc-256x256.png" alt="Imagen 256x256" width="64">
-                <img src="img/tottenham-hotspur-fc-128x128.png" alt="Imagen 128x128" width="32">
-                <img src="img/tottenham-hotspur-fc-64x64.png" alt="Imagen 64x64" width="16">
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>José Antonio Rosales</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Sección de Presentación -->
+        <section id="inicio">
+            <article class="grid">
+                <div>
+                    <hgroup>
+                        <h1>José Antonio Rosales</h1>
+                        <h2>Desarrollador Java y C</h2>
+                        <h3>Especializado en Web Scraping</h3>
+                    </hgroup>
+                    <p>Desarrollador especializado en Java con experiencia en web scraping. Actualmente trabajo como
+                        Associate Programmer en Alldata.</p>
+                    <a href="#contacto" role="button" class="secondary">Contáctame</a>
+                    <a href="#" role="button">Descargar CV</a>
+                </div>
+                <div class="text-center">
+                    <!-- Espacio para tu foto -->
+                    <img src="https://via.placeholder.com/300x300/0066cc/ffffff?text=Tu+Foto"
+                        alt="Foto de José Antonio Rosales" class="img-fluid">
+                    <p><small>Sube tu foto reemplazando esta imagen</small></p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección de Experiencia -->
+        <section id="experiencia">
+            <h2 class="text-center">Experiencia Profesional</h2>
+            <article>
+                <header>
+                    <h3>Associate Programmer</h3>
+                    <p>Alldata | Actualidad</p>
+                </header>
+                <p>Desarrollo de soluciones de software utilizando Java y C, con especialización en técnicas de web
+                    scraping para extracción y procesamiento de datos.</p>
+                <ul>
+                    <li>Desarrollo de aplicaciones en Java y C</li>
+                    <li>Implementación de soluciones de web scraping</li>
+                    <li>Procesamiento y análisis de datos</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section id="habilidades">
+            <h2 class="text-center">Habilidades Técnicas</h2>
+            <div class="grid">
+                <div>
+                    <h4>Lenguajes de Programación</h4>
+                    <ul>
+                        <li>Java (Avanzado)</li>
+                        <li>C (Avanzado)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Especialidades</h4>
+                    <ul>
+                        <li>Web Scraping</li>
+                        <li>Extracción de Datos</li>
+                        <li>Procesamiento de Información</li>
+                    </ul>
+                </div>
             </div>
         </section>
+
+        <!-- Sección de Educación -->
+        <section id="educacion">
+            <h2 class="text-center">Educación</h2>
+            <article>
+                <header>
+                    <h3>Universidad Tecnológica de Chihuahua</h3>
+                    <p>Título obtenido</p>
+                </header>
+                <p>Formación académica en el área de tecnología y desarrollo de software.</p>
+            </article>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2 class="text-center">Contacto</h2>
+            <form>
+                <div class="grid">
+                    <input type="text" name="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+                </div>
+                <textarea name="mensaje" placeholder="Mensaje" aria-label="Mensaje" rows="5" required></textarea>
+                <button type="submit" class="contrast">Enviar Mensaje</button>
+            </form>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2025 ANTONIO ROSALES</p>
+
+    <footer class="container-fluid text-center">
+        <small>
+            <p>© 2023 José Antonio Rosales. Todos los derechos reservados.</p>
+        </small>
     </footer>
 </body>
 
